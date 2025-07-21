@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings | RentEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Rent<span>Ease</span></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html" class="active">Listings</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="login.html" class="btn btn-outline">Login</a></li>
+                <li><a href="register.html" class="btn">Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Listings Header -->
+    <section class="listings-header py-4">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <h2>Available Properties in Dhaka</h2>
+                <div class="sort-filter">
+                    <select>
+                        <option value="">Sort By</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listings Content -->
+    <section class="listings-content py-4">
+        <div class="container">
+            <div class="grid grid-4">
+                <!-- Filters Sidebar -->
+                <div class="filters">
+                    <div class="filter-card">
+                        <h3>Filter Properties</h3>
+                        <div class="filter-group">
+                            <h4>Location</h4>
+                            <select>
+                                <option value="">All Areas</option>
+                                <option value="gulshan">Gulshan</option>
+                                <option value="banani">Banani</option>
+                                <option value="dhanmondi">Dhanmondi</option>
+                                <option value="mirpur">Mirpur</option>
+                                <option value="uttara">Uttara</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Property Type</h4>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" checked> Apartment</label>
+                                <label><input type="checkbox" checked> House</label>
+                                <label><input type="checkbox" checked> Duplex</label>
+                                <label><input type="checkbox" checked> Sublet</label>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Price Range (BDT)</h4>
+                            <div class="price-range">
+                                <input type="range" min="5000" max="200000" value="100000" step="5000">
+                                <div class="range-values">
+                                    <span>5,000</span>
+                                    <span>100,000</span>
+                                    <span>200,000+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Bedrooms</h4>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" checked> 1</label>
+                                <label><input type="checkbox" checked> 2</label>
+                                <label><input type="checkbox" checked> 3</label>
+                                <label><input type="checkbox" checked> 4+</label>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Amenities</h4>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox"> Furnished</label>
+                                <label><input type="checkbox"> Parking</label>
+                                <label><input type="checkbox"> Generator</label>
+                                <label><input type="checkbox"> Elevator</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-full">Apply Filters</button>
+                    </div>
+                </div>
+
+                <!-- Property Listings -->
+                <div class="listings-grid">
+                    <div class="grid grid-3">
+                        <!-- Property Card 1 -->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/property1.jpg" alt="Modern Apartment">
+                                <span class="badge">Featured</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>Modern Apartment in Gulshan</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Gulshan-1, Dhaka</p>
+                                <div class="features">
+                                    <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 1800 sqft</span>
+                                </div>
+                                <div class="price">BDT 45,000/month</div>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 2 -->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/property2.jpg" alt="Luxury Villa">
+                                <span class="badge badge-primary">New</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>Luxury Villa in Banani</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Banani, Dhaka</p>
+                                <div class="features">
+                                    <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2500 sqft</span>
+                                </div>
+                                <div class="price">BDT 80,000/month</div>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 3 -->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/property3.jpg" alt="Cozy Flat">
+                            </div>
+                            <div class="card-body">
+                                <h3>Cozy Flat in Dhanmondi</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Dhanmondi, Dhaka</p>
+                                <div class="features">
+                                    <span><i class="fas fa-bed"></i> 2 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 1200 sqft</span>
+                                </div>
+                                <div class="price">BDT 30,000/month</div>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 4 -->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/property4.jpg" alt="Spacious Apartment">
+                            </div>
+                            <div class="card-body">
+                                <h3>Spacious Apartment in Uttara</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Uttara, Dhaka</p>
+                                <div class="features">
+                                    <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2000 sqft</span>
+                                </div>
+                                <div class="price">BDT 55,000/month</div>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 5 -->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/property5.jpg" alt="Modern Duplex">
+                            </div>
+                            <div class="card-body">
+                                <h3>Modern Duplex in Mirpur</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Mirpur DOHS, Dhaka</p>
+                                <div class="features">
+                                    <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2800 sqft</span>
+                                </div>
+                                <div class="price">BDT 65,000/month</div>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Property Card 6 -->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/property6.jpg" alt="Studio Apartment">
+                            </div>
+                            <div class="card-body">
+                                <h3>Studio Apartment in Bashundhara</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> Bashundhara R/A, Dhaka</p>
+                                <div class="features">
+                                    <span><i class="fas fa-bed"></i> 1 Bed</span>
+                                    <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 800 sqft</span>
+                                </div>
+                                <div class="price">BDT 25,000/month</div>
+                                <a href="#" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination mt-4">
+                        <a href="#" class="btn btn-outline disabled"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="btn btn-outline active">1</a>
+                        <a href="#" class="btn btn-outline">2</a>
+                        <a href="#" class="btn btn-outline">3</a>
+                        <a href="#" class="btn btn-outline">4</a>
+                        <a href="#" class="btn btn-outline"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid grid-4">
+            <div class="footer-about">
+                <h3>RentEase</h3>
+                <p>Dhaka's most trusted platform for house rentals, connecting renters and property owners directly.</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>For Renters</h3>
+                <ul>
+                    <li><a href="#">Search Properties</a></li>
+                    <li><a href="#">Renter Dashboard</a></li>
+                    <li><a href="#">Renting Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Road, Banani, Dhaka</p>
+                <p><i class="fas fa-phone"></i> +880 123456789</p>
+                <p><i class="fas fa-envelope"></i> info@rentease.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 RentEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

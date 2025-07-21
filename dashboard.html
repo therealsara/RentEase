@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | RentEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Rent<span>Ease</span></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-outline dropdown-toggle">
+                            <i class="fas fa-user-circle"></i> Sara J.
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                            <a href="#"><i class="fas fa-heart"></i> Saved Properties</a>
+                            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header py-4">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <h2>Welcome back, Sara!</h2>
+                <a href="#" class="btn">List a Property</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-content py-4">
+        <div class="container">
+            <div class="grid grid-4">
+                <!-- Sidebar -->
+                <div class="dashboard-sidebar">
+                    <div class="sidebar-menu">
+                        <a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a href="#"><i class="fas fa-home"></i> My Properties</a>
+                        <a href="#"><i class="fas fa-heart"></i> Saved Properties</a>
+                        <a href="#"><i class="fas fa-envelope"></i> Messages</a>
+                        <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="dashboard-main">
+                    <!-- Stats Cards -->
+                    <div class="grid grid-3">
+                        <div class="stat-card">
+                            <div class="stat-icon bg-primary">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>3</h3>
+                                <p>Properties Listed</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon bg-secondary">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>12</h3>
+                                <p>Saved Properties</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon bg-success">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>5</h3>
+                                <p>New Messages</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="activity-card mt-4">
+                        <h3>Recent Activity</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p>You listed a new property <strong>Modern Apartment in Gulshan</strong></p>
+                                    <small>2 hours ago</small>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p>You saved <strong>Luxury Villa in Banani</strong> to your favorites</p>
+                                    <small>1 day ago</small>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p>You received a new message about <strong>Cozy Flat in Dhanmondi</strong></p>
+                                    <small>2 days ago</small>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p>Your property <strong>Spacious Apartment in Uttara</strong> was approved</p>
+                                    <small>3 days ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Your Listings -->
+                    <div class="listings-card mt-4">
+                        <div class="flex justify-between items-center">
+                            <h3>Your Listings</h3>
+                            <a href="#" class="btn btn-sm">View All</a>
+                        </div>
+                        <div class="grid grid-3">
+                            <!-- Listing 1 -->
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/property1.jpg" alt="Modern Apartment">
+                                    <span class="badge">Active</span>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Modern Apartment in Gulshan</h3>
+                                    <p><i class="fas fa-map-marker-alt"></i> Gulshan-1, Dhaka</p>
+                                    <div class="features">
+                                        <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                        <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                    </div>
+                                    <div class="price">BDT 45,000/month</div>
+                                    <div class="card-actions">
+                                        <a href="#" class="btn btn-sm btn-outline">Edit</a>
+                                        <a href="#" class="btn btn-sm">View</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Listing 2 -->
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/property4.jpg" alt="Spacious Apartment">
+                                    <span class="badge badge-primary">Pending</span>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Spacious Apartment in Uttara</h3>
+                                    <p><i class="fas fa-map-marker-alt"></i> Uttara, Dhaka</p>
+                                    <div class="features">
+                                        <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                        <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                    </div>
+                                    <div class="price">BDT 55,000/month</div>
+                                    <div class="card-actions">
+                                        <a href="#" class="btn btn-sm btn-outline">Edit</a>
+                                        <a href="#" class="btn btn-sm">View</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Listing 3 -->
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/property7.jpg" alt="Duplex House">
+                                    <span class="badge badge-warning">Draft</span>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Duplex House in Mirpur</h3>
+                                    <p><i class="fas fa-map-marker-alt"></i> Mirpur DOHS, Dhaka</p>
+                                    <div class="features">
+                                        <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                        <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                    </div>
+                                    <div class="price">BDT 70,000/month</div>
+                                    <div class="card-actions">
+                                        <a href="#" class="btn btn-sm btn-outline">Edit</a>
+                                        <a href="#" class="btn btn-sm">Complete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid grid-4">
+            <div class="footer-about">
+                <h3>RentEase</h3>
+                <p>Dhaka's most trusted platform for house rentals, connecting renters and property owners directly.</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>For Renters</h3>
+                <ul>
+                    <li><a href="#">Search Properties</a></li>
+                    <li><a href="#">Renter Dashboard</a></li>
+                    <li><a href="#">Renting Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Road, Banani, Dhaka</p>
+                <p><i class="fas fa-phone"></i> +880 123456789</p>
+                <p><i class="fas fa-envelope"></i> info@rentease.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 RentEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
